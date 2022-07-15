@@ -1,15 +1,15 @@
 import { useTheme } from "../context/ThemeContext";
 
-const Button = () => {
+const Header = () => {
   const { theme, setTheme } = useTheme();
   return (
     <div>
-      <div>Button ({theme})</div>
+      <div>header : ({theme}) </div>
       <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-        Change Theme
+        Header
       </button>
     </div>
   );
 };
 
-export default Button;
+export default Header;
